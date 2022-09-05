@@ -1,9 +1,17 @@
+import { Header, SalesCard } from "./components"
 
-
-export function App() {
+export const App = () => {
   return (
-    <div>
-      Hello world
-    </div>
+    <>
+      <Header />
+
+      <main>
+        <section id='sales'>
+          <div className="dsmeta-card">
+            <SalesCard />
+          </div>
+        </section>
+      </main>
+    </>
   )
 }
